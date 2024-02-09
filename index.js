@@ -9,7 +9,7 @@ dotenv.config();
 app.use(express.json());
 
 let corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'process.env.FRONTENDURI',
 }
 
 app.use(cors(corsOptions));
