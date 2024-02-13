@@ -55,4 +55,4 @@ app.use('/',allrouter);
 
 
 
-app.listen(4000,()=>{ console.log("Backend server listening at port 4000")});
+app.listen(process.env.PORT,()=>{ console.log("Backend server listening at port 4000")});
